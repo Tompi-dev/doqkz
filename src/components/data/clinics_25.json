@@ -1,0 +1,456 @@
+[
+  {
+    "id": 1,
+    "name": "Клиника №1",
+    "rating": 9.2,
+    "reviews": 19216,
+    "description": "Описание клиники №1. Многопрофильная клиника с качественным обслуживанием.",
+    "image": "https://images.unsplash.com/photo-1579154204601-01588f351e53",
+    "locations": [
+      {
+        "address": "г. Алматы, улица 99",
+        "map_url": "https://www.google.com/maps?q=38017"
+      },
+      {
+        "address": "г. Алматы, улица 18",
+        "map_url": "https://www.google.com/maps?q=45450"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Клиника №2",
+    "rating": 7.7,
+    "reviews": 6816,
+    "description": "Описание клиники №2. Многопрофильная клиника с качественным обслуживанием.",
+    "image": "https://images.unsplash.com/photo-1588776814830-4fb5c3f4a4d7",
+    "locations": [
+      {
+        "address": "г. Алматы, улица 70",
+        "map_url": "https://www.google.com/maps?q=34448"
+      },
+      {
+        "address": "г. Алматы, улица 40",
+        "map_url": "https://www.google.com/maps?q=29416"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Клиника №3",
+    "rating": 8.5,
+    "reviews": 9869,
+    "description": "Описание клиники №3. Многопрофильная клиника с качественным обслуживанием.",
+    "image": "https://images.unsplash.com/photo-1589758438368-3c8fdfb1b87d",
+    "locations": [
+      {
+        "address": "г. Алматы, улица 16",
+        "map_url": "https://www.google.com/maps?q=26642"
+      },
+      {
+        "address": "г. Алматы, улица 36",
+        "map_url": "https://www.google.com/maps?q=25641"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Клиника №4",
+    "rating": 7.1,
+    "reviews": 1391,
+    "description": "Описание клиники №4. Многопрофильная клиника с качественным обслуживанием.",
+    "image": "https://images.unsplash.com/photo-1576765607924-c3c8f2b303db",
+    "locations": [
+      {
+        "address": "г. Алматы, улица 42",
+        "map_url": "https://www.google.com/maps?q=62879"
+      },
+      {
+        "address": "г. Алматы, улица 67",
+        "map_url": "https://www.google.com/maps?q=26575"
+      },
+      {
+        "address": "г. Алматы, улица 77",
+        "map_url": "https://www.google.com/maps?q=91632"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Клиника №5",
+    "rating": 7.9,
+    "reviews": 19885,
+    "description": "Описание клиники №5. Многопрофильная клиника с качественным обслуживанием.",
+    "image": "https://images.unsplash.com/photo-1628771065518-0d82f1938462",
+    "locations": [
+      {
+        "address": "г. Алматы, улица 36",
+        "map_url": "https://www.google.com/maps?q=82202"
+      },
+      {
+        "address": "г. Алматы, улица 93",
+        "map_url": "https://www.google.com/maps?q=99730"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Клиника №6",
+    "rating": 8.0,
+    "reviews": 14647,
+    "description": "Описание клиники №6. Многопрофильная клиника с качественным обслуживанием.",
+    "image": "https://images.unsplash.com/photo-1588776814830-4fb5c3f4a4d7",
+    "locations": [
+      {
+        "address": "г. Алматы, улица 79",
+        "map_url": "https://www.google.com/maps?q=47697"
+      },
+      {
+        "address": "г. Алматы, улица 30",
+        "map_url": "https://www.google.com/maps?q=35754"
+      },
+      {
+        "address": "г. Алматы, улица 83",
+        "map_url": "https://www.google.com/maps?q=24860"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Клиника №7",
+    "rating": 9.4,
+    "reviews": 4144,
+    "description": "Описание клиники №7. Многопрофильная клиника с качественным обслуживанием.",
+    "image": "https://images.unsplash.com/photo-1588776814836-3f2e4fd47dd7",
+    "locations": [
+      {
+        "address": "г. Алматы, улица 46",
+        "map_url": "https://www.google.com/maps?q=73032"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Клиника №8",
+    "rating": 9.8,
+    "reviews": 19005,
+    "description": "Описание клиники №8. Многопрофильная клиника с качественным обслуживанием.",
+    "image": "https://images.unsplash.com/photo-1576765607924-c3c8f2b303db",
+    "locations": [
+      {
+        "address": "г. Алматы, улица 67",
+        "map_url": "https://www.google.com/maps?q=41406"
+      },
+      {
+        "address": "г. Алматы, улица 12",
+        "map_url": "https://www.google.com/maps?q=82206"
+      },
+      {
+        "address": "г. Алматы, улица 21",
+        "map_url": "https://www.google.com/maps?q=92647"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Клиника №9",
+    "rating": 8.8,
+    "reviews": 12417,
+    "description": "Описание клиники №9. Многопрофильная клиника с качественным обслуживанием.",
+    "image": "https://images.unsplash.com/photo-1588776814830-4fb5c3f4a4d7",
+    "locations": [
+      {
+        "address": "г. Алматы, улица 16",
+        "map_url": "https://www.google.com/maps?q=42548"
+      },
+      {
+        "address": "г. Алматы, улица 10",
+        "map_url": "https://www.google.com/maps?q=11127"
+      },
+      {
+        "address": "г. Алматы, улица 89",
+        "map_url": "https://www.google.com/maps?q=49579"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Клиника №10",
+    "rating": 7.8,
+    "reviews": 6858,
+    "description": "Описание клиники №10. Многопрофильная клиника с качественным обслуживанием.",
+    "image": "https://images.unsplash.com/photo-1588776814830-4fb5c3f4a4d7",
+    "locations": [
+      {
+        "address": "г. Алматы, улица 12",
+        "map_url": "https://www.google.com/maps?q=72761"
+      },
+      {
+        "address": "г. Алматы, улица 13",
+        "map_url": "https://www.google.com/maps?q=74288"
+      },
+      {
+        "address": "г. Алматы, улица 36",
+        "map_url": "https://www.google.com/maps?q=68837"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Клиника №11",
+    "rating": 9.4,
+    "reviews": 19873,
+    "description": "Описание клиники №11. Многопрофильная клиника с качественным обслуживанием.",
+    "image": "https://images.unsplash.com/photo-1628771065518-0d82f1938462",
+    "locations": [
+      {
+        "address": "г. Алматы, улица 41",
+        "map_url": "https://www.google.com/maps?q=32654"
+      },
+      {
+        "address": "г. Алматы, улица 42",
+        "map_url": "https://www.google.com/maps?q=97833"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Клиника №12",
+    "rating": 8.0,
+    "reviews": 3171,
+    "description": "Описание клиники №12. Многопрофильная клиника с качественным обслуживанием.",
+    "image": "https://images.unsplash.com/photo-1606813908920-3082b7c64c15",
+    "locations": [
+      {
+        "address": "г. Алматы, улица 17",
+        "map_url": "https://www.google.com/maps?q=22209"
+      },
+      {
+        "address": "г. Алматы, улица 60",
+        "map_url": "https://www.google.com/maps?q=10642"
+      },
+      {
+        "address": "г. Алматы, улица 93",
+        "map_url": "https://www.google.com/maps?q=60322"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Клиника №13",
+    "rating": 7.8,
+    "reviews": 6785,
+    "description": "Описание клиники №13. Многопрофильная клиника с качественным обслуживанием.",
+    "image": "https://images.unsplash.com/photo-1576765975027-cf2a3c00ef0c",
+    "locations": [
+      {
+        "address": "г. Алматы, улица 19",
+        "map_url": "https://www.google.com/maps?q=29422"
+      },
+      {
+        "address": "г. Алматы, улица 45",
+        "map_url": "https://www.google.com/maps?q=75681"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Клиника №14",
+    "rating": 8.1,
+    "reviews": 4075,
+    "description": "Описание клиники №14. Многопрофильная клиника с качественным обслуживанием.",
+    "image": "https://images.unsplash.com/photo-1576765607924-c3c8f2b303db",
+    "locations": [
+      {
+        "address": "г. Алматы, улица 11",
+        "map_url": "https://www.google.com/maps?q=76969"
+      },
+      {
+        "address": "г. Алматы, улица 58",
+        "map_url": "https://www.google.com/maps?q=69516"
+      },
+      {
+        "address": "г. Алматы, улица 58",
+        "map_url": "https://www.google.com/maps?q=80864"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Клиника №15",
+    "rating": 9.2,
+    "reviews": 2349,
+    "description": "Описание клиники №15. Многопрофильная клиника с качественным обслуживанием.",
+    "image": "https://images.unsplash.com/photo-1588776814830-4fb5c3f4a4d7",
+    "locations": [
+      {
+        "address": "г. Алматы, улица 3",
+        "map_url": "https://www.google.com/maps?q=16324"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Клиника №16",
+    "rating": 8.3,
+    "reviews": 9488,
+    "description": "Описание клиники №16. Многопрофильная клиника с качественным обслуживанием.",
+    "image": "https://images.unsplash.com/photo-1589758438368-3c8fdfb1b87d",
+    "locations": [
+      {
+        "address": "г. Алматы, улица 90",
+        "map_url": "https://www.google.com/maps?q=93037"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Клиника №17",
+    "rating": 8.4,
+    "reviews": 15529,
+    "description": "Описание клиники №17. Многопрофильная клиника с качественным обслуживанием.",
+    "image": "https://images.unsplash.com/photo-1588776814830-4fb5c3f4a4d7",
+    "locations": [
+      {
+        "address": "г. Алматы, улица 16",
+        "map_url": "https://www.google.com/maps?q=50983"
+      },
+      {
+        "address": "г. Алматы, улица 34",
+        "map_url": "https://www.google.com/maps?q=10867"
+      },
+      {
+        "address": "г. Алматы, улица 96",
+        "map_url": "https://www.google.com/maps?q=29260"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Клиника №18",
+    "rating": 9.2,
+    "reviews": 17077,
+    "description": "Описание клиники №18. Многопрофильная клиника с качественным обслуживанием.",
+    "image": "https://images.unsplash.com/photo-1606813908920-3082b7c64c15",
+    "locations": [
+      {
+        "address": "г. Алматы, улица 89",
+        "map_url": "https://www.google.com/maps?q=84048"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Клиника №19",
+    "rating": 8.2,
+    "reviews": 7398,
+    "description": "Описание клиники №19. Многопрофильная клиника с качественным обслуживанием.",
+    "image": "https://images.unsplash.com/photo-1588776814546-ec7d7fbd6588",
+    "locations": [
+      {
+        "address": "г. Алматы, улица 9",
+        "map_url": "https://www.google.com/maps?q=91245"
+      },
+      {
+        "address": "г. Алматы, улица 64",
+        "map_url": "https://www.google.com/maps?q=67839"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Клиника №20",
+    "rating": 7.9,
+    "reviews": 1674,
+    "description": "Описание клиники №20. Многопрофильная клиника с качественным обслуживанием.",
+    "image": "https://images.unsplash.com/photo-1588776814546-ec7d7fbd6588",
+    "locations": [
+      {
+        "address": "г. Алматы, улица 62",
+        "map_url": "https://www.google.com/maps?q=40376"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Клиника №21",
+    "rating": 7.7,
+    "reviews": 1682,
+    "description": "Описание клиники №21. Многопрофильная клиника с качественным обслуживанием.",
+    "image": "https://images.unsplash.com/photo-1580281657527-47e6ba6e1b73",
+    "locations": [
+      {
+        "address": "г. Алматы, улица 11",
+        "map_url": "https://www.google.com/maps?q=71185"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Клиника №22",
+    "rating": 7.9,
+    "reviews": 18483,
+    "description": "Описание клиники №22. Многопрофильная клиника с качественным обслуживанием.",
+    "image": "https://images.unsplash.com/photo-1589758438368-3c8fdfb1b87d",
+    "locations": [
+      {
+        "address": "г. Алматы, улица 92",
+        "map_url": "https://www.google.com/maps?q=10720"
+      },
+      {
+        "address": "г. Алматы, улица 88",
+        "map_url": "https://www.google.com/maps?q=63042"
+      },
+      {
+        "address": "г. Алматы, улица 92",
+        "map_url": "https://www.google.com/maps?q=76319"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Клиника №23",
+    "rating": 7.5,
+    "reviews": 14784,
+    "description": "Описание клиники №23. Многопрофильная клиника с качественным обслуживанием.",
+    "image": "https://images.unsplash.com/photo-1588776814836-3f2e4fd47dd7",
+    "locations": [
+      {
+        "address": "г. Алматы, улица 30",
+        "map_url": "https://www.google.com/maps?q=53053"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Клиника №24",
+    "rating": 9.5,
+    "reviews": 18094,
+    "description": "Описание клиники №24. Многопрофильная клиника с качественным обслуживанием.",
+    "image": "https://images.unsplash.com/photo-1588776814546-ec7d7fbd6588",
+    "locations": [
+      {
+        "address": "г. Алматы, улица 4",
+        "map_url": "https://www.google.com/maps?q=95847"
+      },
+      {
+        "address": "г. Алматы, улица 53",
+        "map_url": "https://www.google.com/maps?q=61523"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Клиника №25",
+    "rating": 8.2,
+    "reviews": 16285,
+    "description": "Описание клиники №25. Многопрофильная клиника с качественным обслуживанием.",
+    "image": "https://images.unsplash.com/photo-1628771065518-0d82f1938462",
+    "locations": [
+      {
+        "address": "г. Алматы, улица 32",
+        "map_url": "https://www.google.com/maps?q=20331"
+      }
+    ]
+  }
+]

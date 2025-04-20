@@ -1,0 +1,67 @@
+.clinic-header {
+    background-color: #4ba3cc;
+    color: white;
+    padding: 16px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .clinic-header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  
+  .clinic-logo {
+    width: 60px;
+  }
+  
+  .clinic-search {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+  
+  .clinic-auth {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .clinic-header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 12px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    font-size: 15px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  
+  .nav-links li:hover {
+    opacity: 0.8;
+  }
+  
+  .add-clinic {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  

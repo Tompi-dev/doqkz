@@ -1,0 +1,87 @@
+
+
+
+
+/* SpecialtyList */
+/* .specialty-list {
+  max-width: 1100px;
+  margin: 0 auto 50px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+} */
+
+
+/* ClinicsSlider */
+.clinics-slider {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto 50px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.clinics-slider h2 {
+  font-size: 1.2rem;
+}
+
+.clinic-list {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.clinic {
+  min-width: 120px;
+  background: #f1f5f9;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.rating {
+  color: #2563eb;
+  font-weight: bold;
+}
+
+.connect-btn {
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.connect-btn:hover {
+  background-color: #2563eb;
+}
+
+/* FeedbackBox */
+.feedback-box {
+  background: linear-gradient(to right, #60a5fa, #3b82f6);
+  color: white;
+  border-radius: 8px;
+  padding: 30px;
+  max-width: 900px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.feedback-box button {
+  background: white;
+  color: #3b82f6;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.feedback-box button:hover {
+  background: #f1f5f9;
+}
+

@@ -1,0 +1,341 @@
+[
+  {
+    "name": "Табынбаева Светлана Нахиматдиновна",
+    "specialty": "Акушер-гинеколог",
+    "experience": "21 год",
+    "rating": 9.2,
+    "reviews": 19,
+    "clinic": "ЭМИРМЕД",
+    "address": "мкр. Аксай-2, 44А, Ауэзовский район, Алматы",
+    "nearest_metro": "Бауыржан Момышулы (2.0 км)",
+    "price": {
+      "original": 14000,
+      "discounted": 3500,
+      "discount": "75%",
+      "promo": "Подробнее"
+    },
+    "available_slots": {
+      "8 апр": ["08:00", "08:30", "09:00"],
+      "9 апр": ["08:00", "08:30", "09:00"],
+      "10 апр": ["08:00", "08:30", "09:00"],
+      "11 апр": ["15:00", "15:30"],
+      "12 апр": ["16:00", "16:30"],
+      "13 апр": ["15:30", "17:00"]
+    },
+    "image": "https://example.com/images/doctor1.jpg"
+  },
+  {
+    "name": "Асанова Лейла Мухамедовна",
+    "specialty": "Терапевт",
+    "experience": "17 лет",
+    "rating": 9.5,
+    "reviews": 24,
+    "clinic": "Медикал центр",
+    "address": "пр. Абая, 145, Алматы",
+    "nearest_metro": "Алмалы (1.3 км)",
+    "price": {
+      "original": 10000,
+      "discounted": 5000,
+      "discount": "50%",
+      "promo": "Подробнее"
+    },
+    "available_slots": {
+      "8 апр": ["10:00", "10:30", "11:00"],
+      "9 апр": ["09:30", "10:00"],
+      "10 апр": ["10:00", "11:00"],
+      "11 апр": ["15:00", "15:30"],
+      "12 апр": ["16:00", "16:30"],
+      "13 апр": ["15:30", "17:00"]
+    },
+    "image": "https://example.com/images/doctor2.jpg"
+  },
+  {
+    "name": "Ибраев Тимур Нурланович",
+    "specialty": "Кардиолог",
+    "experience": "12 лет",
+    "rating": 9.1,
+    "reviews": 30,
+    "clinic": "Здоровье плюс",
+    "address": "ул. Тимирязева, 34, Алматы",
+    "nearest_metro": "Сайран (0.9 км)",
+    "price": {
+      "original": 12000,
+      "discounted": 7200,
+      "discount": "40%",
+      "promo": "Подробнее"
+    },
+    "available_slots": {
+      "8 апр": ["13:00", "13:30", "14:00"],
+      "9 апр": ["13:30", "14:30"],
+      "10 апр": ["14:00", "15:00"]
+    },
+    "image": "https://example.com/images/doctor3.jpg"
+  },
+  {
+    "name": "Ким Анастасия Сергеевна",
+    "specialty": "Дерматолог",
+    "experience": "9 лет",
+    "rating": 8.9,
+    "reviews": 18,
+    "clinic": "SKIN Clinic",
+    "address": "ул. Панфилова, 67, Алматы",
+    "nearest_metro": "Жибек Жолы (1.0 км)",
+    "price": {
+      "original": 15000,
+      "discounted": 7500,
+      "discount": "50%",
+      "promo": "Подробнее"
+    },
+    "available_slots": {
+      "8 апр": ["15:00", "15:30"],
+      "9 апр": ["16:00", "16:30"],
+      "10 апр": ["15:30", "17:00"],
+      "11 апр": ["15:00", "15:30"],
+      "12 апр": ["16:00", "16:30"],
+      "13 апр": ["15:30", "17:00"]
+    },
+    "image": "https://example.com/images/doctor4.jpg"
+  },
+  {
+    "name": "Нурмуханов Алишер Ержанович",
+    "specialty": "Невролог",
+    "experience": "15 лет",
+    "rating": 9.0,
+    "reviews": 22,
+    "clinic": "Нейроцентр",
+    "address": "пр. Назарбаева, 23, Алматы",
+    "nearest_metro": "Абай (1.5 км)",
+    "price": {
+      "original": 13000,
+      "discounted": 6500,
+      "discount": "50%",
+      "promo": "doc.kz"
+    },
+    "available_slots": {
+      "8 апр": ["11:00", "11:30"],
+      "9 апр": ["12:00", "12:30"],
+      "10 апр": ["13:00", "13:30"]
+    },
+    "image": "https://example.com/images/doctor5.jpg"
+  },
+  {
+    "name": "Садыкова Жанна Ескалиевна",
+    "specialty": "Педиатр",
+    "experience": "20 лет",
+    "rating": 9.6,
+    "reviews": 40,
+    "clinic": "Детский мир",
+    "address": "ул. Гоголя, 99, Алматы",
+    "nearest_metro": "Райымбек батыр (2.2 км)",
+    "price": {
+      "original": 11000,
+      "discounted": 5500,
+      "discount": "50%",
+      "promo": "doc.kz"
+    },
+    "available_slots": {
+      "8 апр": ["09:00", "09:30"],
+      "9 апр": ["10:00", "11:00"],
+      "10 апр": ["09:30", "10:30"]
+    },
+    "image": "https://example.com/images/doctor6.jpg"
+  },
+  {
+    "name": "Ахметов Данияр Бахытович",
+    "specialty": "Уролог",
+    "experience": "14 лет",
+    "rating": 8.8,
+    "reviews": 16,
+    "clinic": "URO+ Clinic",
+    "address": "ул. Байзакова, 21, Алматы",
+    "nearest_metro": "Сайран (1.1 км)",
+    "price": {
+      "original": 13500,
+      "discounted": 6750,
+      "discount": "50%",
+      "promo": "doc.kz"
+    },
+    "available_slots": {
+      "8 апр": ["14:00", "14:30"],
+      "9 апр": ["15:00", "15:30"],
+      "10 апр": ["16:00", "16:30"]
+    },
+    "image": "https://example.com/images/doctor7.jpg"
+  },
+  {
+    "name": "Искакова Айнура Калиевна",
+    "specialty": "Офтальмолог",
+    "experience": "18 лет",
+    "rating": 9.3,
+    "reviews": 28,
+    "clinic": "Глазная клиника «Вижу»",
+    "address": "пр. Аль-Фараби, 104, Алматы",
+    "nearest_metro": "Ботанический сад (1.8 км)",
+    "price": {
+      "original": 12500,
+      "discounted": 6250,
+      "discount": "50%",
+      "promo": "doc.kz"
+    },
+    "available_slots": {
+      "8 апр": ["12:00", "12:30"],
+      "9 апр": ["13:00", "13:30"],
+      "10 апр": ["14:00", "14:30"]
+    },
+    "image": "https://example.com/images/doctor8.jpg"
+  },
+  {
+    "name": "Мусаев Руслан Темирханович",
+    "specialty": "Психотерапевт",
+    "experience": "11 лет",
+    "rating": 8.7,
+    "reviews": 14,
+    "clinic": "Центр Психологии и Баланса",
+    "address": "ул. Шевченко, 198, Алматы",
+    "nearest_metro": "Байконур (1.0 км)",
+    "price": {
+      "original": 20000,
+      "discounted": 10000,
+      "discount": "50%",
+      "promo": "doc.kz"
+    },
+    "available_slots": {
+      "8 апр": ["18:00", "18:30"],
+      "9 апр": ["17:30", "18:30"],
+      "10 апр": ["19:00"]
+    },
+    "image": "https://example.com/images/doctor9.jpg"
+  },
+  {
+    "name": "Тлеуханова Сауле Муратовна",
+    "specialty": "Эндокринолог",
+    "experience": "16 лет",
+    "rating": 9.4,
+    "reviews": 26,
+    "clinic": "Эндо Клиник",
+    "address": "ул. Толе би, 56, Алматы",
+    "nearest_metro": "Алатау (1.7 км)",
+    "price": {
+      "original": 14500,
+      "discounted": 7250,
+      "discount": "50%",
+      "promo": "doc.kz"
+    },
+    "available_slots": {
+      "8 апр": ["08:00", "09:00"],
+      "9 апр": ["10:00", "11:00"],
+      "10 апр": ["12:00", "13:00"]
+    },
+    "image": "https://example.com/images/doctor10.jpg"
+  },
+  {
+    "name": "Серикова Алия Армановна",
+    "specialty": "Аллерголог",
+    "experience": "13 лет",
+    "rating": 9.1,
+    "reviews": 19,
+    "clinic": "Аллергоцентр",
+    "address": "пр. Достык, 90, Алматы",
+    "nearest_metro": "Жибек Жолы (1.3 км)",
+    "price": {
+      "original": 12000,
+      "discounted": 6000,
+      "discount": "50%",
+      "promo": "doc.kz"
+    },
+    "available_slots": {
+      "8 апр": ["13:00", "13:30"],
+      "9 апр": ["14:00"],
+      "10 апр": ["15:00", "15:30"]
+    },
+    "image": "https://example.com/images/doctor11.jpg"
+  },
+  {
+    "name": "Мирзалиева Асемгуль Ерлановна",
+    "specialty": "Гастроэнтеролог",
+    "experience": "10 лет",
+    "rating": 8.6,
+    "reviews": 11,
+    "clinic": "GastroLife",
+    "address": "ул. Муканова, 73, Алматы",
+    "nearest_metro": "Байконур (1.2 км)",
+    "price": {
+      "original": 11000,
+      "discounted": 5500,
+      "discount": "50%",
+      "promo": "doc.kz"
+    },
+    "available_slots": {
+      "8 апр": ["16:00", "17:00"],
+      "9 апр": ["17:30"],
+      "10 апр": ["18:00", "18:30"]
+    },
+    "image": "https://example.com/images/doctor12.jpg"
+  },
+  {
+    "name": "Омаров Еркебулан Аргынович",
+    "specialty": "Хирург",
+    "experience": "19 лет",
+    "rating": 9.0,
+    "reviews": 25,
+    "clinic": "Хирургия.kz",
+    "address": "пр. Райымбека, 76, Алматы",
+    "nearest_metro": "Сарыарка (1.6 км)",
+    "price": {
+      "original": 18000,
+      "discounted": 9000,
+      "discount": "50%",
+      "promo": "doc.kz"
+    },
+    "available_slots": {
+      "8 апр": ["10:00", "11:00"],
+      "9 апр": ["12:00", "13:00"],
+      "10 апр": ["14:00"]
+    },
+    "image": "https://example.com/images/doctor13.jpg"
+  },
+  {
+    "name": "Джуматаева Карлыгаш Маратовна",
+    "specialty": "Ревматолог",
+    "experience": "7 лет",
+    "rating": 8.5,
+    "reviews": 10,
+    "clinic": "Ревма Центр",
+    "address": "ул. Кабанбай батыра, 50, Алматы",
+    "nearest_metro": "Театр имени Ауэзова (1.9 км)",
+    "price": {
+      "original": 10000,
+      "discounted": 5000,
+      "discount": "50%",
+      "promo": "doc.kz"
+    },
+    "available_slots": {
+      "8 апр": ["15:00", "16:00"],
+      "9 апр": ["16:30"],
+      "10 апр": ["17:30"]
+    },
+    "image": "https://example.com/images/doctor14.jpg"
+  },
+  {
+    "name": "Бекенов Азамат Нургалиевич",
+    "specialty": "Ортопед",
+    "experience": "22 года",
+    "rating": 9.7,
+    "reviews": 35,
+    "clinic": "OrtoClinic",
+    "address": "ул. Розыбакиева, 102, Алматы",
+    "nearest_metro": "Алатау (1.1 км)",
+    "price": {
+      "original": 16000,
+      "discounted": 8000,
+      "discount": "50%",
+      "promo": "doc.kz"
+    },
+    "available_slots": {
+      "8 апр": ["11:00", "12:00"],
+      "9 апр": ["13:00", "14:00"],
+      "10 апр": ["15:00", "16:00"]
+    },
+    "image": "https://example.com/images/doctor15.jpg"
+  }
+]
