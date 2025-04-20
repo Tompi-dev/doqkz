@@ -1,8 +1,9 @@
 import './ClinicWhiteHeader.css';
 import { useState, useEffect } from 'react';
+import clinicData from '../data/clinics_255.json'
 
 
-const ClinicWhiteHeader = () => {
+const ClinicWhiteHeader = ({clinics, setClinics}) => {
   const [calendar, showCalendar] = useState(false);
   const [sortType, setSortType] = useState('');
 
@@ -10,7 +11,26 @@ const ClinicWhiteHeader = () => {
     const value =e.target.value;
     setSortType(value);
 
-    
+    if (value=== 'rating'){
+      const sorted = [...clinics].sort((a,b) => b.rating - a.rating );
+      setClinics(sorted);
+    }
+
+    else if( value ==='price'){
+      const sorted = [...clinics].sort((a, b) => b.price - a.price);
+      setClinics(sorted)
+    }
+    else if(value ==='experience'){
+      const sorted = [...clinics].sort((a, b) => b.price - a.price);
+      setClinics(sorted)
+    }
+
+    else if(value === ''){
+      setClinics(clinicData)
+    }
+    else {
+      console.log('choose anothe ples')
+    }
 
   };
 
@@ -22,7 +42,7 @@ const ClinicWhiteHeader = () => {
 
  useEffect(() =>{
 
- })
+ },[clinics])
 
   return (
     <div>
@@ -37,7 +57,7 @@ const ClinicWhiteHeader = () => {
         </div>
 
         <div className="filters">
-          <select onChange={handleSortChange}  value={sortType} className="filter-btn" name="По умолчанию" id="">
+          <select  onChange={handleSortChange}  value={sortType} className="filter-btn" name="По умолчанию" id="">
             <option value="">По умолчанию</option>
             <option value="rating">По рейтингу </option>
             <option value="price">По цене</option>

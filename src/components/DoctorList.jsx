@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './DoctorList.css';
-import doctorData from './data/akushers.json';
+// import doctorData from './data/akushers.json';
 
 const DoctorCard = ({ doctor }) => {
   const [isOpen, setOpen] = useState(true);
@@ -89,10 +89,10 @@ const DoctorCard = ({ doctor }) => {
   );
 };
 
-const DoctorList = () => {
+const DoctorList = ({clinics}) => {
   return (
     <div className="doctor-list-only">
-      {doctorData.map((doctor, index) => (
+      {clinics.map((doctor, index) => (
         <DoctorCard key={index} doctor={doctor} />
       ))}
     </div>

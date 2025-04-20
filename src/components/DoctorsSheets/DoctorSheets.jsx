@@ -1,7 +1,12 @@
 import ClinicHeader from '../ClinicSheets/ClinicHeader'
 import ClinicWhiteHeader from './ClinicWhiteHeader'
 import ClinicsCardss from './ClinicsCardss'
+import clinicData from '../data/clinics_255.json'
+import { useState } from 'react'
+
 export const DoctorSheets = () => {
+
+  const [clinics, setClinics] =useState(clinicData);
 
 
 
@@ -10,8 +15,8 @@ export const DoctorSheets = () => {
   return (
     <div>
         <ClinicHeader />
-        <ClinicWhiteHeader />
-        <ClinicsCardss />
+        <ClinicWhiteHeader  clinics={clinics}  setClinics={setClinics} />
+        <ClinicsCardss clinics={clinics} />
 
         
 

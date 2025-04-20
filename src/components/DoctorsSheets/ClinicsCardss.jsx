@@ -1,8 +1,10 @@
 import React from 'react';
-import clinicData from '../data/clinics_255.json'
+// import clinicData from '../data/clinics_255.json'
 import './ClinicListss.css';
 
 const ClinicCardss = ({ clinic }) => {
+
+  
   return (
     <div className="clinic-card">
       <div className="clinic-left">
@@ -19,9 +21,11 @@ const ClinicCardss = ({ clinic }) => {
         <div className="clinic-addresses">
           <strong>Адреса:</strong>
           <ul>
-            {clinic.addresses.map((address, idx) => (
+            {clinic?.addresses?.map((address, idx) => (
               <li key={idx}>{address}</li>
             ))}
+
+
           </ul>
         </div>
         <p>
@@ -33,14 +37,18 @@ const ClinicCardss = ({ clinic }) => {
   );
 };
 
-const ClinicListss = () => {
+const ClinicListss = ({ clinics }) => {
+  console.log("Тип clinics:", typeof clinics); 
+  console.log("Значение clinics:", clinics);   
+
   return (
     <div className="clinic-list-only">
-      {clinicData.map((clinic, index) => (
+      {clinics.map((clinic, index) => (
         <ClinicCardss key={index} clinic={clinic} />
       ))}
     </div>
   );
 };
+
 
 export default ClinicListss;
