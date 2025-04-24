@@ -3,7 +3,10 @@ import './DoctorList.css';
 // import doctorData from './data/akushers.json';
 
 const DoctorCard = ({ doctor }) => {
+  
   const [isOpen, setOpen] = useState(true);
+  if (!doctor || typeof doctor !== 'object') return null;
+
 
   return (
     <div className="doctor-card">
@@ -22,13 +25,14 @@ const DoctorCard = ({ doctor }) => {
         <p>Стаж {doctor.experience}</p>
         <p>Прием в клинике</p>
         <div className="price-row">
-          <span className="old-price">{doctor.price.original} тг.</span>
-          <span className="new-price">{doctor.price.discounted} тг.</span>
-          <span className="discount">-{doctor.price.discount}</span>
-          <span data-bs-toggle="modal" data-bs-target="#exampleModal" className="promo">
-            {doctor.price.promo}
-          </span>
-        </div>
+  <span className="old-price">{doctor.price?.original ?? '—'} тг.</span>
+  <span className="new-price">{doctor.price?.discounted ?? '—'} тг.</span>
+  <span className="discount">-{doctor.price?.discount ?? '0%'}</span>
+  <span data-bs-toggle="modal" data-bs-target="#exampleModal" className="promo">
+    {doctor.price?.promo ?? 'Подробнее'}
+  </span>
+</div>
+
         <p className="clinic-name">{doctor.clinic}</p>
         <p className="clinic-address">{doctor.address}</p>
         <p className="metro">{doctor.nearest_metro}</p>

@@ -1,25 +1,45 @@
+import { useState, useEffect } from 'react'
+import axios from 'axios'
+
 import ClinicHeader from '../ClinicSheets/ClinicHeader'
 import ClinicWhiteHeader from './ClinicWhiteHeader'
 import ClinicsCardss from './ClinicsCardss'
-import clinicData from '../data/clinics_255.json'
-import { useState } from 'react'
 
 export const DoctorSheets = () => {
+  const [clinics, setClinics] = useState([])
 
-  const [clinics, setClinics] =useState(clinicData);
+  useEffect(() => {
+    axios.get('http://127.0.0.1:8000/Clinics/get/clinics/')
+      .then(response => {
+        setClinics(response.data)
+      })
+      .catch(error => {
+        console.error('Error fetching clinics:', error)
+      })
+  }, []) // empty dependency array = run once on mount
 
 
 
+  const handleSortChange = (sortType) => {
+    alert(sortType)
+    setClinics([])
+    axios.get('http://127.0.0.1:8000/Clinics/get/clinics/?type=' +sortType)
+      .then(response => {
+        setClinics(response.data)
+      })
+      .catch(error => {
+        console.error('Error fetching clinics:', error)
+      })
+
+    
+  }
 
 
   return (
     <div>
-        <ClinicHeader />
-        <ClinicWhiteHeader  clinics={clinics}  setClinics={setClinics} />
-        <ClinicsCardss clinics={clinics} />
-
-        
-
+      <ClinicHeader />
+      <ClinicWhiteHeader clinics={clinics} setClinics={setClinics} onSortChange={handleSortChange} />
+      <ClinicsCardss clinics={clinics} />
     </div>
   )
 }
