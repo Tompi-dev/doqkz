@@ -10,7 +10,9 @@ import Searching from './components/Searching';
 import DoctorList from './components/DoctorList';
 import { ClinicList } from './components/ClinicSheets/ClinicList';
 import { DoctorSheets } from './components/DoctorsSheets/DoctorSheets';
-
+import DoctorProfileCard from './components/DoctorProfileCArd/DoctorProfileCard';
+import ClinicWhiteHeader from './components/DoctorsSheets/ClinicWhiteHeader';
+import ClinicHeader from './components/ClinicSheets/ClinicHeader';
 const App = () => (
   <Router>
     <main>
@@ -28,18 +30,30 @@ const App = () => (
         />
         <Route path="/procedures" element={
           <>
-          
-          <DoctorSheets />
+
+            <DoctorSheets />
           </>
-          } />
+        } />
 
-          <Route path='/Clinics' element= {
-            <>
+        <Route path='/Doctors' element={
+          <>
             <ClinicList />
-            </>}
 
-            />
-          
+          </>}
+
+
+
+        />
+        <Route path="/Doctors/Card/:id" element={
+          <>
+           <ClinicHeader />
+            <ClinicWhiteHeader />
+            <DoctorProfileCard />
+          </>
+        } />
+
+
+
       </Routes>
     </main>
   </Router>

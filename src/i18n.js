@@ -26,7 +26,7 @@ i18n
           },
           search: {
             doctorPlaceholder: 'Врач, клиника или процедура',
-            clinics: 'Клиники',
+            clinics: 'Доктора',
             procedures: 'Процедуры',
           },
         },
@@ -45,7 +45,7 @@ i18n
           },
           search: {
             doctorPlaceholder: 'Doctor, clinic or procedure',
-            clinics: 'Clinics',
+            clinics: 'Doctors',
             procedures: 'Procedures',
           },
         },
@@ -64,7 +64,7 @@ i18n
           },
           search: {
             doctorPlaceholder: 'Дәрігер, клиника немесе процедура',
-            clinics: 'Клиникалар',
+            clinics: 'Дәрігерлер',
             procedures: 'Процедуралар',
           },
         },

@@ -1,11 +1,25 @@
 import React, { useState } from 'react';
 import './DoctorList.css';
 // import doctorData from './data/akushers.json';
+import { useNavigate } from 'react-router-dom';
 
 const DoctorCard = ({ doctor }) => {
-  
+
   const [isOpen, setOpen] = useState(true);
+  const navigate = useNavigate();
+  // const handleId = (id) => {
+  //   setId(id);
+  //   console.log(doctorid)
+  //   console.log(id);
+  // };
+  const handleId =(id)=>{
+    console.log(id)
+    navigate(`/Doctors/Card/${id}`)
+  
+  }
+
   if (!doctor || typeof doctor !== 'object') return null;
+
 
 
   return (
@@ -19,8 +33,12 @@ const DoctorCard = ({ doctor }) => {
         </div>
       </div>
 
-      <div className="doctor-info">
-        <h3>{doctor.name}</h3>
+      <div  className="doctor-info">
+
+      <h3 onClick={()=> handleId(doctor.id)} style={{ cursor: 'pointer', color: '#007bff' }}>
+          {doctor.name}
+        </h3>
+
         <p>{doctor.specialty}</p>
         <p>Стаж {doctor.experience}</p>
         <p>Прием в клинике</p>

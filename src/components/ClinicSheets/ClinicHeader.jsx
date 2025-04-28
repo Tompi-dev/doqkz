@@ -40,6 +40,7 @@ const ClinicHeader = () => {
           />
         </div>
 
+
         <div className="clinic-auth">
           <Reg />
         </div>

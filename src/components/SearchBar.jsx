@@ -37,7 +37,7 @@ const SearchBar = ({
           <FaArrowRight />
         </Link>
 
-        <Link to="/Clinics" className="tab">
+        <Link to="/Doctors" className="tab">
           <div className="tab-left">
             <div className="icons-bg">
               <FaUserDoctor />

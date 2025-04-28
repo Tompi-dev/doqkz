@@ -1,0 +1,204 @@
+.doctor-profile-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 24px;
+    max-width: 1200px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .doctor-profile-left,
+  .doctor-profile-right {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .doctor-profile-left {
+    flex: 2;
+  }
+  
+  .doctor-profile-right {
+    flex: 1;
+    border: 1px solid #e3e3e3;
+  }
+  
+  .doctor-header {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .doctor-photo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+  }
+  
+  .experience {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .doctor-reviews {
+    margin-bottom: 16px;
+  }
+
+  .doctor-reviews-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: #e3e3e3 1px solid;
+    margin-bottom: 15px ;
+  }
+  
+  .rating {
+    font-size: 18px;
+    color: #1e40af;
+    font-weight: bold;
+  }
+  
+  .review-count {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .doctor-section {
+    margin-bottom: 16px;
+    border-bottom: rgb(223, 218, 218) 1px solid;
+  }
+  
+  .doctor-section h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .doctor-section ul {
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .doctor-photo-section {
+    margin-top: 16px;
+  }
+  
+  .doctor-small-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .clinic-card {
+    margin-top: 24px;
+    border-top: 1px solid #eee;
+    padding-top: 16px;
+  }
+  
+  .clinic-info {
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .clinic-name {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .clinic-rating {
+    color: #15803d;
+    font-weight: bold;
+    margin: 4px 0;
+  }
+  
+  .clinic-price {
+    margin-top: 8px;
+  }
+  
+  .price-old {
+    text-decoration: line-through;
+    color: #b91c1c;
+    margin-right: 8px;
+  }
+  
+  .price-new {
+    color: #166534;
+    font-weight: bold;
+  }
+  
+  .discount {
+    background: #fde68a;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 6px;
+    margin-left: 6px;
+  }
+  
+  .clinic-booking button {
+    margin-top: 8px;
+    background: #2563eb;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .booking-section h4 {
+    background: linear-gradient(to right, #60a5fa, #22d3ee);
+    padding: 8px;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  
+  .booking-clinic {
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+  
+  .booking-price {
+    margin: 10px 0;
+    font-size: 14px;
+  }
+  
+  .tag {
+    background: #ffef9f;
+    padding: 2px 6px;
+    margin-left: 4px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+  
+  .booking-calendar {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    text-align: center;
+  }
+  
+  .calendar-day {
+    flex: 1;
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin: 2px;
+  }
+  
+  .calendar-day.active button {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-top: 4px;
+  }
+  
