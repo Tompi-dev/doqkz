@@ -1,3 +1,4 @@
+// DoctorProfileCard.jsx
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
@@ -14,10 +15,9 @@ export default function DoctorProfileCard() {
   const [doctorProfile, setDoctorProfile] = useState(null);
 
   useEffect(() => {
-    axios.get(`http://127.0.0.1:8000/Doctors/get/akushers/${id}`)
+    axios.get(`http://127.0.0.1:8000/Doctors/get/doctors/${id}/`)
       .then(response => {
         setDoctorProfile(response.data);
-        console.log(response.data);
       })
       .catch(error => {
         console.error("Error fetching doctor profile:", error);
@@ -26,27 +26,70 @@ export default function DoctorProfileCard() {
 
   if (!doctorProfile) return <div>Загрузка...</div>;
 
+  const {
+    full_name,
+    experience_years,
+    description,
+    photo,
+    clinic,
+    specialization,
+    education,
+    experience,
+    procedures,
+    availability,
+    reviews
+  } = doctorProfile;
+
   return (
     <div className="doctor-profile-page">
       <div className="doctor-profile-left">
-        <DoctorCardBasicInfo doctor={doctorProfile} />
-        <DoctorReviews reviews={doctorProfile.reviews_count} score={doctorProfile.user_score} />
-        <DoctorInfoSections
-          about={doctorProfile.about}
-          education={doctorProfile.education}
-          experience={doctorProfile.experience_places}
-          procedures={doctorProfile.procedures}
+        <DoctorCardBasicInfo
+          doctor={{
+            full_name,
+            experience_years,
+            description,
+            photo,
+            specialization: specialization?.name
+          }}
         />
 
-        <ClinicCard 
-        clinic={{ name: doctorProfile.clinic_name, address: doctorProfile.clinic_address, 
-        metro: doctorProfile.nearest_metro, distance_km: doctorProfile.distance_km }} />
+        <DoctorReviews
+          reviews={reviews?.count}
+          score={reviews?.user_score}
+        />
+
+        <DoctorInfoSections
+          about={description}
+          education={education}
+          experience={experience}
+          procedures={procedures.map(p => p.name)}
+        />
+
+        <ClinicCard clinic={clinic} />
       </div>
-      <BookingSection 
-       price = {{ave_price : doctorProfile.price}}
-      clinic={{ name: doctorProfile.clinic_name, address: doctorProfile.clinic_address, 
-        metro: doctorProfile.nearest_metro, distance_km: doctorProfile.distance_km }} 
-      available={{ day: doctorProfile.next_available_day, time: doctorProfile.next_available_time }} />
+
+      <BookingSection
+        price={{ ave_price: 12000 }} // замените на doctorProfile.price, если появится
+        clinic={clinic}
+        available={availability}
+      />
     </div>
   );
 }
+
+
+
+
+
+
+// BookingSection.jsx
+// export function BookingSection({ price, clinic, available }) {
+//   return (
+//     <div className="booking-section">
+//       <h3>Запись на приём</h3>
+//       <p><strong>Цена приёма:</strong> {price.ave_price} ₸</p>
+//       <p><strong>Ближайшая доступная дата:</strong> {available.day} в {available.time}</p>
+//       <p><strong>Клиника:</strong> {clinic.name}</p>
+//     </div>
+//   );
+// }

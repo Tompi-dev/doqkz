@@ -17,3 +17,4 @@ export default function DoctorReviews({reviews, score}) {
     </div>
   );
 }
+

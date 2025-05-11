@@ -1,8 +1,6 @@
 export default function DoctorInfoSections({ about, education, experience, procedures }) {
   // Преобразуем JSON-строки в массивы/объекты
-  const parsedEducation = JSON.parse(education || '[]');
-  const parsedExperience = JSON.parse(experience || '[]');
-  const parsedProcedures = JSON.parse(procedures || '[]');
+  
 
   return (
     <>
@@ -16,32 +14,31 @@ export default function DoctorInfoSections({ about, education, experience, proce
       <div className="doctor-section">
         <h3>Образование</h3>
         <ul>
-          {parsedEducation.map((edu, index) => (
-            <li key={index}>
-              {edu.university}, {edu.specialty} ({edu.year}) — {edu.location}
-            </li>
-          ))}
-        </ul>
+        {education.map((edu, index) => (
+          <li key={index}>
+            {edu.university}, {edu.specialty}, {edu.location}, {edu.year}
+          </li>
+        ))}
+      </ul>
       </div>
 
       <div className="doctor-section">
         <h3>Опыт работы</h3>
         <ul>
-          {parsedExperience.map((exp, index) => (
-            <li key={index}>
-              {exp.clinic}, {exp.role} ({exp.years})
-            </li>
-          ))}
-        </ul>
+        {experience.map((exp, index) => (
+          <li key={index}>
+            {exp.clinic} — {exp.role}, {exp.location} ({exp.years})
+          </li>
+        ))}
+      </ul>
       </div>
 
       <div className="doctor-section">
         <h3>Проводимые процедуры</h3>
         <ul>
-          {parsedProcedures.map((procedure, index) => (
-            <li key={index}>{procedure}</li>
-          ))}
-        </ul>
+        {procedures.map((proc, index) => <li key={index}>{proc}</li>)}
+      </ul>
+
       </div>
 
       <div className="doctor-photo-section">

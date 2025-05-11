@@ -1,106 +1,95 @@
-import React, { useState } from 'react';
-import './DoctorList.css';
-// import doctorData from './data/akushers.json';
+// import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './DoctorList.css';
 
 const DoctorCard = ({ doctor }) => {
-
-  const [isOpen, setOpen] = useState(true);
+  // const [isOpen, setOpen] = useState(true);
   const navigate = useNavigate();
-  // const handleId = (id) => {
-  //   setId(id);
-  //   console.log(doctorid)
-  //   console.log(id);
-  // };
-  const handleId =(id)=>{
-    console.log(id)
-    navigate(`/Doctors/Card/${id}`)
-  
-  }
 
   if (!doctor || typeof doctor !== 'object') return null;
 
-
+  const handleId = (id) => {
+    navigate(`/Doctors/Card/${id}`);
+  };
 
   return (
     <div className="doctor-card">
       
       <div className="doctor-left">
-        <img src={doctor.image} alt={doctor.name} className="doctor-img" />
+        <img
+          src={doctor.photo || '/default-doctor.jpg'}
+          alt={doctor.full_name}
+          className="doctor-img"
+        />
         <div className="rating">
-          <span>{doctor.rating}</span>
-          <p>{doctor.reviews} отзывов</p>
+          <span>{doctor.reviews?.total_score ?? '—'}</span>
+          <p>{doctor.reviews?.count ?? 0} отзывов</p>
         </div>
       </div>
 
-      <div  className="doctor-info">
-
-      <h3 onClick={()=> handleId(doctor.id)} style={{ cursor: 'pointer', color: '#007bff' }}>
-          {doctor.name}
+      
+      <div className="doctor-info">
+        <h3
+          onClick={() => handleId(doctor.id)}
+          style={{ cursor: 'pointer', color: '#007bff' }}
+        >
+          {doctor.full_name}
         </h3>
 
-        <p>{doctor.specialty}</p>
-        <p>Стаж {doctor.experience}</p>
+        <p>{doctor.specialization?.name}</p>
+        <p>Стаж {doctor.experience_years} лет</p>
         <p>Прием в клинике</p>
-        <div className="price-row">
-  <span className="old-price">{doctor.price?.original ?? '—'} тг.</span>
-  <span className="new-price">{doctor.price?.discounted ?? '—'} тг.</span>
-  <span className="discount">-{doctor.price?.discount ?? '0%'}</span>
-  <span data-bs-toggle="modal" data-bs-target="#exampleModal" className="promo">
-    {doctor.price?.promo ?? 'Подробнее'}
-  </span>
-</div>
 
-        <p className="clinic-name">{doctor.clinic}</p>
-        <p className="clinic-address">{doctor.address}</p>
-        <p className="metro">{doctor.nearest_metro}</p>
+       
+        <div className="price-row">
+          <span className="old-price">15000 тг.</span>
+          <span className="new-price">12000 тг.</span>
+          <span className="discount">-20%</span>
+          <span
+            data-bs-toggle="modal"
+            data-bs-target={`#modal-${doctor.id}`}
+            className="promo"
+          >
+            Подробнее
+          </span>
+        </div>
+
+     
+        <p className="clinic-name">{doctor.clinic?.name}</p>
+        <p className="clinic-address">{doctor.clinic?.address}</p>
       </div>
 
       <div className="line"></div>
 
-      <div className="doctor-times">
-        <div className={isOpen ? 'doctor-times-real' : 'doctor-times-real2'}>
-          {Object.entries(doctor.available_slots).map(([date, times]) => (
-            <div key={date} className="date-column">
-              <strong>{date}</strong>
-              <div className="slots">
-                {times.map((time) => (
-                  <button key={time} className="slot-btn">
-                    {time}
-                  </button>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className="more">
-          <button onClick={() => setOpen(!isOpen)} className="more-slots">
-            {isOpen ? 'Показать больше' : 'Меньше '}
-          </button>
-        </div>
-      </div>
-
+      
       <div
         className="modal fade"
-        id="exampleModal"
+        id={`modal-${doctor.id}`}
         tabIndex="-1"
-        aria-labelledby="exampleModalLabel"
+        aria-labelledby="modalLabel"
         aria-hidden="true"
       >
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
-              <h1 className="modal-title fs-5" id="exampleModalLabel">
-                Подробнее
-              </h1>
-              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h1 className="modal-title fs-5" id="modalLabel">Подробнее</h1>
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
             <div className="modal-body">
-              Скидка действует только на первичный приём, повторные приёмы оплачиваются по прайсу клиники.
+              Скидка действует только на первичный приём. Повторные приёмы оплачиваются по прайсу клиники.
               Для получения скидки предъявите СМС с подтверждением записи.
             </div>
             <div className="modal-footer">
-              <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">
+              <button
+                type="button"
+                className="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
                 Закрыть
               </button>
             </div>
@@ -110,6 +99,9 @@ const DoctorCard = ({ doctor }) => {
     </div>
   );
 };
+
+
+
 
 const DoctorList = ({clinics}) => {
   return (

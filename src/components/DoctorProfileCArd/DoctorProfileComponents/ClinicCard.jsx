@@ -6,8 +6,7 @@ export default function ClinicCard({ clinic }) {
       <div className="clinic-info">
         <p className="clinic-name">{clinic.name}</p>
         <p className="clinic-address">{clinic.address}</p>
-        <p className="clinic-location">Метро: {clinic.metro}</p>
-        <p className="clinic-distance">~ {clinic.distance_km} км</p>
+        <p><strong>Телефон:</strong> {clinic.phone}</p>
 
         <div className="clinic-price">
           <span className="price-old">15000₸</span>

@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 import './index.css';
 import Searching from './components/Searching';
 import DoctorList from './components/DoctorList';
-import { ClinicList } from './components/ClinicSheets/ClinicList';
+import { DoctorsInfo } from './components/ClinicSheets/DoctorsInfo';
 import { DoctorSheets } from './components/DoctorsSheets/DoctorSheets';
 import DoctorProfileCard from './components/DoctorProfileCArd/DoctorProfileCard';
 import ClinicWhiteHeader from './components/DoctorsSheets/ClinicWhiteHeader';
@@ -37,7 +37,7 @@ const App = () => (
 
         <Route path='/Doctors' element={
           <>
-            <ClinicList />
+            <DoctorsInfo />
 
           </>}
 
