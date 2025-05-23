@@ -11,23 +11,36 @@ const DoctorCard = ({ doctor }) => {
   const handleId = (id) => {
     navigate(`/Doctors/Card/${id}`);
   };
+  console.log("📷 doctor.photo =", doctor.photo);
+
 
   return (
     <div className="doctor-card">
-      
+
       <div className="doctor-left">
-        <img
-          src={doctor.photo || '/default-doctor.jpg'}
-          alt={doctor.full_name}
-          className="doctor-img"
-        />
+       <img
+  src={`http://127.0.0.1:8000${doctor.photo}`}
+  alt={doctor.full_name}
+  className="doctor-img"
+/>
+
+
+
         <div className="rating">
-          <span>{doctor.reviews?.total_score ?? '—'}</span>
-          <p>{doctor.reviews?.count ?? 0} отзывов</p>
+          <span>
+            {Array.isArray(doctor.reviews) && doctor.reviews.length > 0
+              ? (
+                doctor.reviews.reduce((sum, r) => sum + (r.user_score || 0), 0) /
+                doctor.reviews.length
+              ).toFixed(1)
+              : '—'}
+          </span>
+          <p>{Array.isArray(doctor.reviews) ? doctor.reviews.length : 0} отзывов</p>
         </div>
+
       </div>
 
-      
+
       <div className="doctor-info">
         <h3
           onClick={() => handleId(doctor.id)}
@@ -40,7 +53,7 @@ const DoctorCard = ({ doctor }) => {
         <p>Стаж {doctor.experience_years} лет</p>
         <p>Прием в клинике</p>
 
-       
+
         <div className="price-row">
           <span className="old-price">15000 тг.</span>
           <span className="new-price">12000 тг.</span>
@@ -54,14 +67,14 @@ const DoctorCard = ({ doctor }) => {
           </span>
         </div>
 
-     
+
         <p className="clinic-name">{doctor.clinic?.name}</p>
         <p className="clinic-address">{doctor.clinic?.address}</p>
       </div>
 
       <div className="line"></div>
 
-      
+
       <div
         className="modal fade"
         id={`modal-${doctor.id}`}
@@ -103,7 +116,7 @@ const DoctorCard = ({ doctor }) => {
 
 
 
-const DoctorList = ({clinics}) => {
+const DoctorList = ({ clinics }) => {
   return (
     <div className="doctor-list-only">
       {clinics.map((doctor, index) => (

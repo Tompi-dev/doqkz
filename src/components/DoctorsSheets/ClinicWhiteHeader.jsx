@@ -1,5 +1,6 @@
 import './ClinicWhiteHeader.css';
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router';
 // import clinicData from '../data/clinics_255.json'
 
 
@@ -7,6 +8,7 @@ const ClinicWhiteHeader = ({clinics, setClinics, onSortChange}) => {
   const [calendar, showCalendar] = useState(false);
   const [sortType, setSortType] = useState('');
 
+  const navigate =useNavigate();
   
   const handleSortChange =(e) => {
     const value =e.target.value;
@@ -20,7 +22,8 @@ const ClinicWhiteHeader = ({clinics, setClinics, onSortChange}) => {
   };
 
   const handleLocation = () => {
-    alert("We need ur location, sir")
+    // alert("We need ur location, sir")
+    navigate('/')
 
 
   }

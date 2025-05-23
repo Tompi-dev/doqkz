@@ -1,6 +1,8 @@
 import './WhiteHeader.css';
 import { useState,  } from 'react';
 // import doctorData from '../data/akushers.json'
+import { useNavigate } from 'react-router';
+
 
 const ClinicWhiteHeader = ({ clinics, setClinics, onSortChange }) => {
   const [calendar, showCalendar] = useState(false);
@@ -12,9 +14,12 @@ const ClinicWhiteHeader = ({ clinics, setClinics, onSortChange }) => {
     setClinics(clinics)
     onSortChange(value); // parent handles sorting
   };
-
+  const navigate =useNavigate();
+  
   const handleLocation = () => {
     alert("We need your location, sir");
+    navigate('/Doctors/map')
+
   };
 
   return (

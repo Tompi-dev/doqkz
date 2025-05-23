@@ -5,7 +5,11 @@ import ClinicHeader from '../ClinicSheets/ClinicHeader'
 import ClinicWhiteHeader from './ClinicWhiteHeader'
 import ClinicsCardss from './ClinicsCardss'
 
-export const DoctorSheets = () => {
+
+const DoctorSheets = () => { 
+
+
+
   const [clinics, setClinics] = useState([])
 
   useEffect(() => {
@@ -16,7 +20,7 @@ export const DoctorSheets = () => {
       .catch(error => {
         console.error('Error fetching clinics:', error)
       })
-  }, []) // empty dependency array = run once on mount
+  }, []) 
 
 
 
@@ -43,3 +47,5 @@ export const DoctorSheets = () => {
     </div>
   )
 }
+
+export default DoctorSheets;
