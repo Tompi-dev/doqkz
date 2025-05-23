@@ -2,6 +2,7 @@
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 import BookingSection from './DoctorProfileComponents/BookingSection';
 import DoctorCardBasicInfo from './DoctorProfileComponents/DoctorCardBasicInfo';
@@ -13,6 +14,19 @@ import './DoctorProfileCard.css';
 export default function DoctorProfileCard() {
   const { id } = useParams();
   const [doctorProfile, setDoctorProfile] = useState(null);
+  const navigate = useNavigate();
+
+  const handleShowDoctorOnMap = () => {
+  const lat = doctorProfile?.clinic?.latitude;
+  const lng = doctorProfile?.clinic?.longitude;
+
+  if (!lat || !lng) {
+    alert("Координаты клиники недоступны.");
+    return;
+  }
+
+  navigate(`/Doctors/map?lat=${lat}&lng=${lng}`);
+};
 
   useEffect(() => {
     axios.get(`http://127.0.0.1:8000/Doctors/get/doctors/${id}/`)
@@ -52,6 +66,9 @@ export default function DoctorProfileCard() {
             specialization: specialization?.name
           }}
         />
+        <button onClick={handleShowDoctorOnMap} className="show-on-map-btn">
+  📍 Показать, где находится врач
+</button>
 
         <DoctorReviews
           reviews={reviews?.count}
